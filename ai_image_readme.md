@@ -1,17 +1,28 @@
 # 小恶魔画画使用说明
 ## 调用格式为：小恶魔画画 (指定分辨率) (可选的参数) (输入的词条)
 
-例如：小恶魔画画 /p touhou, hakurei reimu
+例如：
+
+小恶魔画画 /p reimu, touhou
+
+小恶魔画画 /s 1 girl, blunt bangs,black short hair,dynamic angle,jk,small breast,{{hair intakes,intricate}},[[[messy hair]]],school uniform,dynamic angle,sidelocks,round glasses,[sketch],{baroque},[water color],from viewer,with deer
+
 
 ### 指定分辨率：
-/p 竖版512*768
+（默认）/p 竖版512*768 
+
+/P 竖版704*1088
 
 /l 横板768*512
 
+/L 横板1088*704
+
 /s 方形640*640
 
+/S 方形1024*1024
+
 ### 输入的词条：
-词条间以逗号加空格分隔，词条最多225个。{}表示加强，[]表示减弱，可套娃。具体词条可去官网的输入栏测试，会有颜色显示模型对该词条的了解程度。默认在最前面加了masterpiece, high quality这两个。注意不要有中文字符。
+词条间以逗号加空格分隔，词条最多225个。{}表示加强，[]表示减弱，可套娃（注意与StableDiffusion的小括号不一样）。具体词条可去官网的输入栏测试，会有颜色显示模型对该词条的了解程度。默认在最前面加了masterpiece, high quality这两个。注意不要有中文字符。
 
 
 ## 可选的参数：调用格式为：参数名=具体内容。参数间以空格分隔。
@@ -35,7 +46,7 @@ uc=[big breasts, large breasts]
 ### sampler：
 默认k_euler_ancestral，可选：k_euler, k_lms, plms, ddim。
 ### 
-steps：默认28（目前上限28）。迭代次数，不是越高越好  
+steps：默认28最大50。迭代次数，不一定越高越好  
 详细解释可参考：https://gist.github.com/crosstyan/f912612f4c26e298feec4a2924c41d99
 
 ## 使用可选参数的调用格式：
